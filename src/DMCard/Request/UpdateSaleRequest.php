@@ -3,11 +3,9 @@
 
 namespace DMCard\Request;
 
-use App\Controller\Component\EcommerceLogger\EcommerceLogger;
 use DMCard\Environment;
 use DMCard\SaleCapture;
 use DMCard\Merchant;
-use Cake\Utility\Inflector;
 
 class UpdateSaleRequest extends AbstractRequest
 {
@@ -18,11 +16,10 @@ class UpdateSaleRequest extends AbstractRequest
      * @param Merchant $merchant
      * @param Environment $environment
      */
-    public function __construct(Merchant $merchant, Environment $environment)
+    public function __construct(Merchant $merchant, Environment $environment, LoggerInterface $logger = null)
     {
-        $name = explode('\\', get_class());
 
-        parent::__construct($merchant, new EcommerceLogger('dmcard_'. Inflector::underscore(end($name)) . '.log'));
+        parent::__construct($merchant, $logger);
 
         $this->environment = $environment;
     }
