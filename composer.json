@@ -1,0 +1,20 @@
+{
+    "name": "filipe/dm-card",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "description": "DMCard integration SDK",
+    "authors": [
+        {
+            "name": "Filipe Augusto Magalhães",
+            "email": "filipeaugustomagalhaes@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rede\\": "src//DMCard"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
