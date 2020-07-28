@@ -1,20 +1,21 @@
 {
-    "name": "filipe/dm-card",
-    "type": "library",
-    "license": "MIT",
-    "version": "1.0.0",
-    "description": "DMCard integration SDK",
-    "authors": [
-        {
-            "name": "Filipe Augusto Magalhães",
-            "email": "filipeaugustomagalhaes@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Rede\\": "src//DMCard"
-        }
-    },
-    "minimum-stability": "stable",
-    "require": {}
+  "name": "filipeaugusto/dm-card",
+  "version": "1.0.1",
+  "description": "DMCard integration SDK",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "type": "library",
+  "require": {},
+  "suggest": {},
+  "autoload": {
+    "psr-4": {
+      "DMCard\\": "src//DMCard"
+    }
+  },
+  "authors": [
+    {
+      "name": "Filipe Augusto Magalhães",
+      "email": "filipeaugustomagalhaes@gmail.com"
+    }
+  ]
 }
