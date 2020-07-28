@@ -6,6 +6,7 @@ namespace DMCard\Request;
 use DMCard\Environment;
 use DMCard\SaleCapture;
 use DMCard\Merchant;
+use Psr\Log\LoggerInterface;
 
 class UpdateSaleRequest extends AbstractRequest
 {
